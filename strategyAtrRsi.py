@@ -102,7 +102,7 @@ class AtrRsiStrategy(CtaTemplate):
         # initData = self.loadBar(self.initDays)
 
         # jqdata登陆
-        jqdatasdk.auth(u'15010492066', u'798513')
+        jqdatasdk.auth(u'XXXXXXXX', u'XXXXXXX')
 
         initData = []
         trade_days_list = jqdatasdk.get_trade_days(end_date=self.today, count=self.initDays)
