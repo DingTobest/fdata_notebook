@@ -109,7 +109,6 @@ class AtrRsiStrategy(CtaTemplate):
 
         # 获取前多日如数，按倒叙排序
         minute_df = jqdatasdk.get_price('IC1808.CCFX', start_date=trade_days_list[0], end_date=self.today, frequency='minute')  # Fix
-        minute_df.sort_index(inplace=True, ascending=False)
 
         # 将数据转换为loadCsv中处理的数据类型，方便处理
         del minute_df['money']
